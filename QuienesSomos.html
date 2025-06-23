@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maqueta Ofit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fonts.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4 py-2 border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./assets/img/LogoOfit.png" alt="ofit logo" height="30" class="me-2">
+        <img src="./assets/img/wysetc-2022-new-logo-1.png" alt="wyse logo" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link fw-bold" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="./QuienesSomos.html">Us</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold" href="./programa.html">Programs</a></li>
+
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold text-primary" href="./programa.html" role="button"
+              data-bs-toggle="dropdown">Programas</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Programa 1</a></li>
+              <li><a class="dropdown-item" href="#">Programa 2</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item"><a class="nav-link fw-bold" href="./programar-entrevistas.html">Schedule an interview</a>
+          </li>
+        </ul>
+        <button class="btn btn-warning fw-bold rounded-pill">Log in</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="heroCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+    <div class="carousel-inner">
+<!-- 
+      <div class="carousel-item carousel-item-image active">
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-between py-5 position-relative ">
+
+          <div class="col-md-6 text-start animate__animated animate__fadeInLeft">
+            <h3 class="mb-1 ultra" style="color: #002c6c; font-weight: 600; ">
+             WE ARE A
+
+            </h3>
+            <h1 class="mb-1" style="color: #002c6c; font-family: 'Crossten'; font-weight: 900; ; line-height: 1;">
+              LEADING <span style="color: #fbc412;"><br>COMPANY</span>
+            </h1>
+            <p class="lead text-muted animate__animated animate__fadeInLeft animate__delay-1s subtext">
+            in cultural exchanges
+            </p>
+            <div class="d-flex flex-wrap gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+              <a href="#" class="btn rounded-pill px-4 py-2"
+                style="background-color: #002c6c; color: white; font-weight: 600;">
+                      Schedule an interview
+
+              </a>
+              <a href="#" class="btn rounded-pill px-4 py-2"
+                style="background-color: #fbc412; color: #002c6c; font-weight: 600;">
+      More information
+              </a>
+            </div>
+          </div>
+
+
+          <div
+            class="col-md-6 d-none d-md-flex position-relative justify-content-center align-items-center animate__animated animate__zoomIn animate__delay-1s">
+            <div
+              class="position-absolute top-0 start-50 translate-middle-x bg-white shadow px-3 py-2 rounded-4 d-flex align-items-center gap-2"
+              style="z-index: 4; top: -20px;">
+              <img src="./assets/img/2 - Portada/Estrella.png" width="24" alt="estrella" style="background-color: #fbc412; border-radius: 50%; padding: 5px;  width: 45px;
+">
+              <h4 style="color: #002c6c; line-height: 1.1; font-family: 'Crossten'; font-weight: 700;">
+                <span style="display: block; font-weight: 900;">+20 Years</span>
+                <span style="font-weight: 500;">of leadership</span>
+              </h4>
+            </div>
+
+            <img src="./assets/img/2 - Portada/Chico.png" class="img-fluid rounded-4"
+              style="max-width: 310px; z-index: 2;" alt="Chico">
+
+            <img src="./assets/img/2 - Portada/Chica.png" class="position-absolute "
+              style="max-width: 310px; top: -20px; right: -4rem; z-index: 3;" alt="Chica">
+
+            <div
+              class="position-absolute bottom-0 end-0 bg-white shadow px-3 py-2 rounded-4 d-flex align-items-center gap-2"
+              style="z-index: 4; transform: translate(30%, 30%);">
+              <div class="container position-relative">
+
+                <img src="./assets/img/2 - Portada/Usuario.png" width="24" alt="usuario"
+                  style="background-color: #fbc412; border-radius: 50%; padding: 5px;  position: absolute;   width: 60px; bottom: 8px; right: 10px;">
+              </div>
+              <div>
+                <h4 style="color: #002c6c; line-height: 1.1; font-family: 'Crossten'; font-weight: 700;">
+                  <span style="display: block; font-weight: 900;  font-size: 1.9rem;">+40,000</span>
+                  <span style="font-weight: 500;">students</span>
+                </h4>
+              </div>
+            </div>
+
+          </div>
+          <div
+            class="col-md-6  d-md-flex position-relative justify-content-center align-items-center animate__animated animate__zoomIn animate__delay-1s">
+            <div
+              class="position-absolute top-0 start-50 translate-middle-x bg-white shadow px-3 py-2 rounded-4 d-flex align-items-center gap-2"
+              style="z-index: 4; top: -20px;">
+              <img src="./assets/img/2 - Portada/Estrella.png" width="24" alt="estrella" style="background-color: #fbc412; border-radius: 50%; padding: 5px;  width: 45px;
+">
+              <h4 style="color: #002c6c; line-height: 1.1; font-family: 'Crossten'; font-weight: 700;">
+                <span style="display: block; font-weight: 900;">+20 años</span>
+                <span style="font-weight: 500;">de liderazgo</span>
+              </h4>
+            </div>
+
+            <img src="./assets/img/2 - Portada/Chico.png" class="img-fluid rounded-4"
+              style="max-width: 310px; z-index: 2;" alt="Chico">
+
+            <img src="./assets/img/2 - Portada/Chica.png" class="position-absolute "
+              style="max-width: 310px; top: -20px; right: -4rem; z-index: 3;" alt="Chica">
+
+            <div
+              class="position-absolute bottom-0 end-0 bg-white shadow px-3 py-2 rounded-4 d-flex align-items-center gap-2"
+              style="z-index: 4; transform: translate(30%, 30%);">
+              <div class="container position-relative">
+
+                <img src="./assets/img/2 - Portada/Usuario.png" width="24" alt="usuario"
+                  style="background-color: #fbc412; border-radius: 50%; padding: 5px;  position: absolute;   width: 60px; bottom: 8px; right: 10px;">
+              </div>
+              <div>
+                <h4 style="color: #002c6c; line-height: 1.1; font-family: 'Crossten'; font-weight: 700;">
+                  <span style="display: block; font-weight: 900;  font-size: 1.9rem;">+40,000</span>
+                  <span style="font-weight: 500;">estudiantes</span>
+                </h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> -->
+
+      <div class="carousel-item carousel-item-image active">
+        <div class=" position-relative animate__animated animate__fadeInUp animate__delay-1s  ">
+
+<p style="
+      position: absolute;
+    left: 30rem;
+    top: 6.5rem;
+    z-index: 999;
+    /* background-color: white; */
+    padding: 0.5rem 1rem;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    font-family: 'Crossten', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: #002c6c;
+    text-align: center;
+    line-height: 1.2;
+">
+  Coming soon<br><span style="font-weight: 600;
+    font-size: 1rem;">to 5 more countries!</span>
+</p>
+          <img src="./assets/img/2 - Portada 2/Banderas.png" alt="Avión" class="animate__animated animate__fadeIn"
+            style="position: absolute; left: 25rem; top: 3rem; ">
+        </div>
+
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-between py-5 position-relative">
+
+          <div class="col-md-6 text-start animate__animated animate__fadeInLeft">
+            <h3 class="mb-1 ultra" style="color: #002c6c; font-weight: 600;">
+             WE ARE AN
+            </h3>
+
+             <h1 class="mb-1" style="font-family: 'Crossten', sans-serif; font-weight: 900; font-size: 2.8rem; line-height: 1.1;">
+    <span style="color: #fbc412;">EXPERIENCED</span><br>
+    <span style="color: #002c6c;">EXCHANGE</span><br>
+    <span style="color: #002c6c;">MULTINATIONAL</span>
+  </h1>
+
+            <p class="lead text-muted animate__animated animate__fadeInLeft animate__delay-1s subtext">
+            operating in Latin America and the<br> Caribbean
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 animate__animated animate__fadeInUp animate__delay-2s">
+                 <a href="#" class="btn rounded-pill px-4 py-2"
+                style="background-color: #002c6c; color: white; font-weight: 600;">
+                      Schedule an interview
+
+              </a>
+              <a href="#" class="btn rounded-pill px-4 py-2"
+                style="background-color: #fbc412; color: #002c6c; font-weight: 600;">
+      More information
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 d-none d-md-flex justify-content-center align-items-center position-relative animate__animated animate__zoomIn animate__delay-1s"
+            style="min-height: 450px;">
+
+            <img src="./assets/img/2 - Portada 2/Foto 1.png" alt="Foto 1"
+              class="animate__animated animate__fadeInUp animate__delay-3s"
+              style="position: absolute; top: 0; left: 10%; height: 260px; z-index: 1; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 12px;">
+
+            <img src="./assets/img/2 - Portada 2/Foto 2.png" alt="Foto 2"
+              class="animate__animated animate__fadeInUp animate__delay-1s"
+              style="position: absolute; top: -20px; left: 35%; height: 290px; z-index: 2; box-shadow: 0 6px 20px rgba(0,0,0,0.15); border-radius: 12px;">
+
+            <img src="./assets/img/2 - Portada 2/Foto 3.png" alt="Foto 3"
+              class="animate__animated animate__fadeInUp animate__delay-2s"
+              style="position: absolute; top: 0; left: 60%; height: 260px; z-index: 1; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 12px;">
+            <div class="container" style="position: relative;">
+
+
+              <img src="./assets/img/2 - Portada 2/Avion.png" alt="Avión" class="animate__animated animate__fadeIn"
+                style="
+                                position: absolute; 
+                                z-index: 3; 
+                                width: auto; 
+                                width: auto;
+                                height: 550px;
+                                object-fit: contain;
+                                left: 2rem;
+                                top: -11rem;
+                                ">
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+
+
+  </div>
+
+
+
+
+<div id="heroCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel" style="    margin-bottom: 6rem;  
+    margin-bottom: 6rem;
+    position: relative;
+    background-image: url('./assets/img/Fondocut.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 45%; /* ajusta el tamaño como prefieras */
+  ">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="container d-flex flex-column align-items-center justify-content-between">
+        <div class="w-100 animate__animated animate__zoomIn animate__delay-1s">
+          <img src="./assets/img/responsive/imagen 2 (1).png" style="width: 100%; height:auto;" alt="">
+        </div>
+        <div class="w-100 text-center animate__animated animate__fadeInLeft">
+          <h3 class="mb-1 ultra" style="color: #002c6c; font-weight: 600;">EMPRESA LÍDER DE LA</h3>
+          <h1 class="mb-1" style="color: #002c6c; font-family: 'Crossten'; font-weight: 900; line-height: 1;     font-size: 2.75rem;
+">
+            REPÚBLICA <span style="color: #fbc412;">DOMINICANA</span>
+          </h1>
+          <p class="lead text-muted animate__animated animate__fadeInLeft animate__delay-1s subtext">
+            en intercambios culturales
+          </p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
+              <a href="#" class="btn rounded-pill px-4 py-2"
+                style="background-color: #002c6c; color: white; font-weight: 600;">
+                      Schedule an interview
+
+              </a>
+              <a href="#" class="btn rounded-pill px-4 py-2"
+                style="background-color: #fbc412; color: #002c6c; font-weight: 600;">
+      More information
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item ">
+      <div class="container d-flex flex-column align-items-center justify-content-between ">
+        <div class="w-100 animate__animated animate__zoomIn animate__delay-1s">
+          <img src="./assets/img/responsive/Avion.png" style="width: 100%; height:auto;" alt="">
+        </div>
+        <div class="w-100 text-center animate__animated animate__fadeInLeft">
+          <h3 class="mb-1 ultra" style="color: #002c6c; font-weight: 600;">WE ARE AN</h3>
+          <h1 class="mb-1" style="color: #002c6c; font-family: 'Crossten'; font-weight: 900; line-height: 1;     font-size: 2.75rem;
+">
+            EXPERIENCED <span style="color: #fbc412;">DE EXPERIENCIAS</span>
+          </h1>
+          <p class="lead text-muted animate__animated animate__fadeInLeft animate__delay-1s subtext">
+            con presencia en latinoamérica
+          </p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center animate__animated animate__fadeInUp animate__delay-2s">
+       <a href="#" class="btn rounded-pill px-4 py-2"
+                style="background-color: #002c6c; color: white; font-weight: 600;">
+                      Schedule an interview
+
+              </a>
+              <a href="#" class="btn rounded-pill px-4 py-2"
+                style="background-color: #fbc412; color: #002c6c; font-weight: 600;">
+      More information
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 2"></button>
+  </div>
+</div>
+
+<section class="other-programs py-5 text-center" style="background: url('./assets/img/jamaica/Fondo.png') no-repeat center center; background-size: cover; min-height: 610px;;">
+  <div class="container" style="    min-height: 518px;
+    height: 100%"
+>
+    <h2 class="text-white mb-4" style="font-weight: 700; font-size: 2.5rem;">
+      OTHER <br><span style="color: #fbc412;">PROGRAMS</span>
+    </h2>
+
+    <div id="programsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+              <div class=" " style="overflow: hidden;">
+                <img src="./assets/img/jamaica/INTERNSHIP PROGRAM 2024.png" class="card-img-top" alt="Internship 2024">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="c  " style="overflow: hidden;">
+                <img src="./assets/img/jamaica/INTERNSHIP_TRAINEE PROGRAM 2024_2025.png" class="card-img-top" alt="Internship/Trainee 2024/2025">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class=" " style="overflow: hidden;">
+                <img src="./assets/img/jamaica/WORK AND STUDY IN CANADA 2024.png" class="card-img-top" alt="Work and Study Canada">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+              <div class="  " style="overflow: hidden;">
+                <img src="./assets/img/jamaica/TEACH USA SEASON 2025.png" class="card-img-top" alt="Teach USA">
+              </div>
+            </div>
+            <!-- puedes agregar más aquí si hay más imágenes -->
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#programsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#programsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+   
+  </div>
+  
+   <a href="./programa.html" class="btn btn-warning mt-4 px-4 py-2  fw-bold shadow" style="border-radius: 25px; background-color: #fbc412; font-size: 1.1rem; color: #002c6c;">
+        Learn more
+      </a>
+</section>
+
+
+
+
+<section class="feria-trabajo bg-white" style="z-index: 0;">
+  <div class="container-fluid w-100">
+    <div class="row align-items-center">
+
+      <div class="col-md-6 text-center text-md-start ps-md-5" data-aos="fade-up" style="height: 400px;">
+        <div class="d-inline-flex align-items-center mb-2" style="flex-direction: column;">
+       <span style="
+    display: inline-block;
+    position: absolute;
+    margin-left: -8rem;
+    background-color: #ffffff;
+    color: #ffc107;
+    font-weight: 700;
+    padding: 3px 44px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    font-size: 1.9rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 6.1rem;
+    border: 5rem;
+    bottom: 15.9rem;
+
+">
+  Learning
+  <span class="cotejo" style="
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid white;
+    display: block;
+  "></span>
+</span>
+
+          <h3 class="mb-0 fw-bold" style="color: #002c6c;     font-size: 3.3rem;
+    line-height: 1;  text-align: end;">Job<br>Opportunities
+          </h3>
+        </div>
+  <p class="mt-3 fs-5" style="
+    color: #002c6c;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    word-break: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  ">
+    As organizer of the largest job fairs in 
+    <span class="fw-bold">Latin America</span> and the Caribbean, we are now 
+    <span class="fw-bold">expanding and bringing</span> this expertise in organization and impact to all of the region.
+  </p>
+
+
+      </div>
+
+      <div class="col-md-6 text-end pe-0 feria-trabajo-img-container" data-aos="fade-up">
+        <img src="./assets/img/feria de trabajo.png" alt="Feria de trabajo" class="img-fluid w-100 feria-trabajo-desktop"
+          style="border-radius: 0;">
+          <img src="./assets/img/feria-trabajo-responsive.png" alt="Feria de trabajo" class="img-fluid w-100 feria-trabajo-resposnsive"
+  style="
+    border-radius: 0;
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+  ">
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="pre-departure-orientation d-none d-md-flex align-items-center"
+  style="background: url('./assets/img/pre-departure-orientation-fondo.png') no-repeat center center; background-size: cover; min-height: 610px;">
+
+    <div class="w-100 container">
+      <div class="row align-items-center">
+
+        <div class="col-md-6 text-center d-flex  align-items-center flex-column text-md-start" data-aos="fade-up">
+          <a href="https://www.instagram.com/reel/DJegNppNTV7/?utm_source=ig_web_copy_link" target="_blank"
+            class="btn btn-light rounded-circle shadow"
+            style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#002c6c" class="bi bi-play-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.596 8.697l-6.363 3.692A.5.5 0 0 1 4 12.191V3.81a.5.5 0 0 1 .757-.429l6.363 3.692a.5.5 0 0 1 0 .854z" />
+            </svg>
+          </a>
+          <p class="text-white mt-2 fw-semibold">Ver video</p>
+
+        </div>
+
+        <!-- Texto -->
+        <div class="col-md-6 text-white text-md-start mt-4 mt-md-0" data-aos="fade-up">
+          <h2 class="fw-bold">
+            <span style="color: #fbc412;">PRE-</span>DEPARTURE<br>ORIENTATION
+          </h2>
+        <p class="mt-3" style="max-width: 500px; font-size: 1.1rem;">
+  The most important farewell event in <strong>Latin America and the Caribbean</strong>, not only because of the large number of students attending, but also due to the invaluable information shared, ensuring that every participant has a successful and enjoyable summer experience.
+</p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section class="pre-departure-orientation d-block d-md-none position-relative text-white" >
+
+  <!-- Encabezado con fondo azul -->
+  <div style="background-color: #002c6c; padding: 2rem 1rem;" class="text-center">
+    <h2 class="fw-bold mb-2" style="font-size: 1.8rem;">
+      <span style="color: #fbc412;">PRE-DEPARTURE</span><br>ORIENTATION
+    </h2>
+    <p class="mt-2 px-3" style="font-size: 1rem; position: absolute;     z-index: 9999;
+">
+    The most important farewell event in <strong>Latin America and the Caribbean</strong>, not only because of the large number of students attending, but also due to the invaluable information shared, ensuring that every participant has a successful and enjoyable summer experience.
+
+    </p>
+  </div>
+
+  <!-- Imagen de fondo con botón y borde -->
+  <div class="video-box position-relative text-center" style="
+    background: url('./assets/img/responsive/FT.png') no-repeat center center;
+    background-size: cover;
+    padding: 7rem 1rem 3rem;
+        min-height: 461px;
+
+  ">
+    <div style="    border: 2px solid white;
+    display: inline-block;
+    padding: 2.5rem 35%;
+    border-radius: 8px;
+        margin-top: 4rem; ">
+      <a href="https://www.instagram.com/reel/DJegNppNTV7/?utm_source=ig_web_copy_link" target="_blank"
+        class="btn btn-light rounded-circle shadow"
+        style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#002c6c" class="bi bi-play-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M11.596 8.697l-6.363 3.692A.5.5 0 0 1 4 12.191V3.81a.5.5 0 0 1 .757-.429l6.363 3.692a.5.5 0 0 1 0 .854z" />
+        </svg>
+      </a>
+      <p class="text-white mt-2 fw-semibold">Ver video</p>
+    </div>
+  </div>
+
+</section>
+
+
+  <section class="somos-miembros d-flex align-items-center"
+    style="background: url('./assets/img/colombia/FONDO\ JA.png') no-repeat center center; background-size: cover; min-height: 610px;">
+    <div class="container">
+      <div class="row align-items-center">
+
+<div class="col-md-6 text-white text-center text-md-start" data-aos="fade-up">
+  <h1 class="fw-bold" style="font-size: 7.5rem;     line-height: 0.5; letter-spacing: -1px;">
+    <span style="color: #002c6c; text-transform: none;">We are</span><br>
+    <span style="font-size: 5rem; color: white; text-transform: none;">members of</span>
+  </h1>
+</div>
+
+
+
+
+
+        <div class="col-md-6 d-flex flex-column gap-3 align-items-center  mt-4 mt-md-0"
+          data-aos="fade-up">
+
+<div class="bg-white shadow p-3 d-flex align-items-center flex-column gap-3 text-center" style="
+  width: 100%;
+  max-width: 255px;
+  padding: 2rem 1rem;
+    height: 320px;
+    max-width: 300px;
+  border-radius: 20px 2px 20px 2px;
+">
+  <img src="./assets/img/somos-miembros/wyse (somos miembros).png" alt="WYSE Travel Confederation" style="
+      width: 260px;
+
+   
+
+  ">
+  
+  <p class="mb-0" style="font-size: 1.1rem; color: #002c6c; font-weight: 400;">
+  Leading global network<br />
+  of cultural and educational<br />
+  exchanges.
+</p>
+
+</div>
+
+
+
+    
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section class="contacto position-relative"
+  style="background: url('./assets/img/jamaica/Pie de pagina fondo jamaica.png') no-repeat center center;
+         background-size: cover;
+         min-height: 610px;
+         z-index: 1;">
+  <div class="container-fluid px-5">
+    <div class="row align-items-center" style="min-height: 610px;">
+      
+      <!-- Columna izquierda -->
+   <div class="col-md-6 p-4" style="z-index: 2;">
+  <img src="./assets/img/contactato/LogoOfit.png" alt="Logo" class="mb-3" style="max-width: 180px;">
+  <p class="mb-4"
+    style="font-family: 'Crossten', sans-serif; font-weight: 500; color: #002c6c; font-size: 1rem;">
+    Leading company in Latin America and <br/>the Caribbean in cultural exchanges.
+  </p>
+  <ul class="list-unstyled"
+    style="color: #002c6c; font-family: 'Crossten', sans-serif; font-weight: 300; font-size: 1rem;">
+    <li class="mb-2 d-flex align-items-center">
+      <img src="./assets/icons/llamar (1).png" alt="" class="me-2"> (876) 715 5470
+    </li>
+    <li class="mb-2 d-flex align-items-center">
+      <img src="./assets/icons/correo-electronico (1).png" alt="" class="me-2"> info@ofit.com.do
+    </li>
+    <li class="d-flex align-items-start">
+      <img src="./assets/icons/mapa.png" alt="" class="me-2 mt-1">
+      <div>
+        13 Haining Road, Suite #5<br />
+        Kingston, Jamaica
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+      <!-- Columna derecha (formulario) -->
+      <div class="col-md-6 p-4 d-flex justify-content-center" style="z-index: 2;">
+        <div class="bg-white rounded p-4 shadow" style="min-width: 330px; max-width: 370px; width: 100%;">
+          <h4 class="fw-bold text-warning mb-3 text-center">Contac Us</h4>
+          <form>
+            <input type="text" class="form-control mb-3 input-yellow" placeholder="Name" />
+            <input type="email" class="form-control mb-3 input-yellow" placeholder="Email" />
+            <input type="text" class="form-control mb-3 input-yellow" placeholder="Subject" />
+            <textarea class="form-control mb-3 input-yellow" rows="4" placeholder="Menssage"></textarea>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .input-yellow {
+      border: 2px solid #fbc412;
+      border-radius: 20px;
+      color: #002c6c;
+      padding: 10px 15px;
+    }
+
+    .input-yellow::placeholder {
+      color: #fbc412;
+      opacity: 1;
+    }
+
+    .input-yellow:focus {
+      border-color: #fbc412;
+      box-shadow: none;
+      outline: none;
+    }
+  </style>
+</section>
+
+
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // duración de la animación
+      once: true     // solo se anima una vez al entrar en pantalla
+    });
+  </script>
+
+</body>
+
+<script>
+
+  window.addEventListener('load', onWndLoad, false);
+
+  function onWndLoad() {
+    const slider = document.querySelector('.slider');
+    const sliders = slider.children;
+
+    let initX = null;
+    let transX = 0;
+    let rotZ = 0;
+    let transY = 0;
+    let curSlide = null;
+
+    const Z_DIS = 50;
+    const Y_DIS = 10;
+    const TRANS_DUR = 0.4;
+
+    document.querySelectorAll('img').forEach(img => {
+      img.onmousemove = e => e.preventDefault();
+      img.ondragstart = e => false;
+    });
+
+    function init() {
+      let z = 0, y = 0;
+      for (let i = sliders.length - 1; i >= 0; i--) {
+        sliders[i].style.transform = `translateZ(${z}px) translateY(${y}px)`;
+        z -= Z_DIS;
+        y += Y_DIS;
+      }
+      attachEvents(sliders[sliders.length - 1]);
+    }
+
+
+    function attachEvents(elem) {
+      curSlide = elem;
+      curSlide.addEventListener('mousedown', slideMouseDown, false);
+      curSlide.addEventListener('touchstart', slideMouseDown, false);
+    }
+
+    function slideMouseDown(e) {
+      initX = e.touches ? e.touches[0].clientX : e.pageX;
+      document.addEventListener('mousemove', slideMouseMove, false);
+      document.addEventListener('touchmove', slideMouseMove, false);
+      document.addEventListener('mouseup', slideMouseUp, false);
+      document.addEventListener('touchend', slideMouseUp, false);
+    }
+
+    function slideMouseMove(e) {
+      const mouseX = e.touches ? e.touches[0].clientX : e.pageX;
+      transX += mouseX - initX;
+      rotZ = transX / 20;
+      transY = -Math.abs(transX / 15);
+
+      curSlide.style.transition = 'none';
+      curSlide.style.transform = `translateX(${transX}px) rotateZ(${rotZ}deg) translateY(${transY}px)`;
+
+      let j = 1;
+      for (let i = sliders.length - 2; i >= 0; i--) {
+        sliders[i].style.transition = 'none';
+        sliders[i].style.transform = `translateX(${transX / (2 * j)}px) rotateZ(${rotZ / (2 * j)}deg) translateY(${Y_DIS * j}px) translateZ(${-Z_DIS * j}px)`;
+        j++;
+      }
+
+      initX = mouseX;
+      e.preventDefault();
+
+      if (Math.abs(transX) >= curSlide.offsetWidth - 30) {
+        document.removeEventListener('mousemove', slideMouseMove, false);
+        document.removeEventListener('touchmove', slideMouseMove, false);
+        curSlide.style.transition = 'ease 0.2s';
+        curSlide.style.opacity = 0;
+
+        const prevSlide = curSlide;
+        attachEvents(sliders[sliders.length - 2]);
+
+        setTimeout(() => {
+          slider.insertBefore(prevSlide, slider.firstChild);
+          prevSlide.style.transition = 'none';
+          prevSlide.style.opacity = '1';
+          slideMouseUp();
+        }, 201);
+      }
+    }
+
+    function slideMouseUp() {
+      transX = 0;
+      rotZ = 0;
+      transY = 0;
+      curSlide.style.transition = `cubic-bezier(0,1.95,.49,.73) ${TRANS_DUR}s`;
+      curSlide.style.transform = `translateX(0px) rotateZ(0deg) translateY(0px)`;
+
+      let j = 1;
+      for (let i = sliders.length - 2; i >= 0; i--) {
+        sliders[i].style.transition = `cubic-bezier(0,1.95,.49,.73) ${TRANS_DUR / (j + 0.9)}s`;
+        sliders[i].style.transform = `translateX(0px) rotateZ(0deg) translateY(${Y_DIS * j}px) translateZ(${-Z_DIS * j}px)`;
+        j++;
+      }
+
+      document.removeEventListener('mousemove', slideMouseMove, false);
+      document.removeEventListener('touchmove', slideMouseMove, false);
+    }
+
+    init();
+  }
+
+</script>
+
+</html>
